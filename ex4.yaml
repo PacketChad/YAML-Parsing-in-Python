@@ -1,0 +1,36 @@
+---
+router1:
+  site: atlanta
+  dns:
+    - dns_pri: '1.1.1.1'
+    - dns_sec: '2.2.2.2'
+  interfaces:
+    GigabitEthernet1:
+      description: Management
+      ipv4addr: 10.1.1.1
+    GigabitEthernet2:
+      description: TO ROUTER2
+      ipv4addr: 10.10.10.1
+
+router2:
+  site: chicago
+  dns:
+    - dns_pri: '3.3.3.3'
+    - dns_sec: '4.4.4.4'
+  interfaces:
+    GigabitEthernet1:
+      description: Management
+      ipv4addr: 10.1.1.2
+    GigabitEthernet2:
+      description: TO ROUTER1
+      ipv4addr: 10.10.10.2
+
+switch1:
+  site: atlanta
+  dns:
+    - dns_pri: '1.1.1.1'
+    - dns_sec: '2.2.2.2'
+  interfaces:
+    GigabitEthernet1:
+      description: Management
+      ipv4addr: 10.1.1.50

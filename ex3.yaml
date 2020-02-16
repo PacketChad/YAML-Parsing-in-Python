@@ -1,0 +1,12 @@
+---
+router1:
+  site: atlanta
+  mgmt_ip: 10.1.1.1
+
+router2:
+  site: chicago
+  mgmt_ip: 10.1.1.2
+
+switch1:
+  site: atlanta
+  mgmt_ip: 10.10.10.50
