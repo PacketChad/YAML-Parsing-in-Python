@@ -38,7 +38,7 @@ print (type(result1))
 print(items)
 print(type(items))
 
-keys = list(result4.keys())
+#keys = list(result4.keys())
 print(keys)
 print(type(keys))
 
@@ -56,6 +56,12 @@ print(values[0])
 get = list(result2.get('switch1'))
 print(get)
 print(type(get))
+
+
+#######################
+### Print item info ###
+#######################
+print(items[2][0] + " has an IP address of " + (items[2][1]))
 
 
 ###############################
